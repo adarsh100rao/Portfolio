@@ -1,0 +1,65 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FileText, Download, UploadCloud, Info } from 'lucide-react';
+import './ResumeSection.css';
+
+const ResumeSection = () => {
+    return (
+        <section id="resume" className="section relative">
+            <div className="glow glow-4"></div>
+
+            <div className="container relative z-10 w-full max-w-4xl">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="resume-container glass-panel"
+                >
+                    <div className="resume-header">
+                        <div className="resume-icon-wrapper">
+                            <FileText size={32} className="resume-icon" />
+                        </div>
+                        <div className="resume-title-group">
+                            <h2 className="resume-title">My Resume</h2>
+                            <p className="resume-subtitle">Download my latest resume or view details</p>
+                        </div>
+                    </div>
+
+                    <div className="resume-content">
+                        <div className="resume-preview">
+                            <div className="preview-skeleton pulse"></div>
+                            <div className="preview-skeleton pulse w-3/4"></div>
+                            <div className="preview-skeleton pulse w-5/6"></div>
+                            <div className="preview-skeleton pulse w-full mt-4 h-24"></div>
+                        </div>
+
+                        <div className="resume-actions">
+                            <a
+                                href="/resume.pdf"
+                                download="My_Resume.pdf"
+                                className="btn btn-primary w-full"
+                            >
+                                <Download size={20} />
+                                Download PDF
+                            </a>
+
+                            <div className="admin-hint">
+                                <div className="hint-header">
+                                    <Info size={16} />
+                                    <span>How to update the resume?</span>
+                                </div>
+                                <p>
+                                    To update this resume, simply replace the <code>resume.pdf</code> file
+                                    in the <code>public</code> directory of this project before deploying.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+            </div>
+        </section>
+    );
+};
+
+export default ResumeSection;
