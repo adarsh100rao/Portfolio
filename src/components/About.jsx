@@ -1,32 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Database, Layout, Terminal } from 'lucide-react';
+import { Code2, Database, Layout, Terminal, Users } from 'lucide-react';
 import './About.css';
 
 const skills = [
     {
-        name: 'Frontend Development',
-        icon: <Layout className="skill-icon" />,
-        description: 'React, Vue, Tailwind CSS, Framer Motion',
-        items: ['React.js', 'Next.js', 'HTML5/CSS3', 'JavaScript (ES6+)']
-    },
-    {
-        name: 'Backend Development',
-        icon: <Terminal className="skill-icon" />,
-        description: 'Node.js, Express, Python, Java',
-        items: ['Node.js', 'Express', 'Java', 'Python']
-    },
-    {
-        name: 'Database Architecture',
-        icon: <Database className="skill-icon" />,
-        description: 'PostgreSQL, MongoDB, Redis',
-        items: ['PostgreSQL', 'MongoDB', 'Redis', 'Firebase']
-    },
-    {
-        name: 'Other Tools',
+        name: 'Languages',
         icon: <Code2 className="skill-icon" />,
-        description: 'Git, Docker, AWS, CI/CD',
-        items: ['Git/GitHub', 'Docker', 'AWS', 'Jest']
+        description: 'Core programming and scripting languages.',
+        items: ['C/C++', 'Java', 'Python', 'JavaScript', 'TypeScript', 'SQL']
+    },
+    {
+        name: 'Technologies & Frameworks',
+        icon: <Layout className="skill-icon" />,
+        description: 'Frontend, backend, and cloud architectures.',
+        items: ['ReactJS', 'NodeJS', 'Angular', 'AWS', 'Linux', 'Shell Scripting']
+    },
+    {
+        name: 'Core CS Fundamentals',
+        icon: <Terminal className="skill-icon" />,
+        description: 'Strong foundation in theoretical computer science concepts.',
+        items: ['Data Structures', 'Algorithms', 'OOP', 'DBMS', 'OS', 'Networks', 'Machine Learning']
+    },
+    {
+        name: 'Soft Skills',
+        icon: <Users className="skill-icon" />,
+        description: 'Interpersonal and professional competencies.',
+        items: ['Communication', 'Leadership', 'Team Management']
     }
 ];
 
@@ -42,9 +42,9 @@ const About = () => {
                 >
                     <h2 className="section-title">About <span className="gradient-text">Me</span></h2>
                     <p className="section-subtitle">
-                        A passionate software engineer with a knack for building beautiful,
-                        high-performance digital experiences. I specialize in full-stack
-                        development with a strong focus on UI/UX.
+                        I am a Software Development Engineer currently building large-scale production systems at Amazon. 
+                        I recently graduated from NIT Hamirpur with a B.Tech in Mathematics and Computing (Class of 2025). 
+                        I have a strong passion for solving complex architectural challenges and leveraging AI to streamline workflows.
                     </p>
                 </motion.div>
 
@@ -55,6 +55,7 @@ const About = () => {
                             className="skill-card glass-panel"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
+                            whileHover={{ scale: 1.02, y: -5 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >

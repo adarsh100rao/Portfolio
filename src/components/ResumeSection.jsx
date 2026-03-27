@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Download, UploadCloud, Info } from 'lucide-react';
+import { FileText, Download, UploadCloud } from 'lucide-react';
 import './ResumeSection.css';
 
 const ResumeSection = () => {
@@ -36,24 +36,16 @@ const ResumeSection = () => {
 
                         <div className="resume-actions">
                             <a
-                                href="/resume.pdf"
-                                download="My_Resume.pdf"
+                                href="https://drive.google.com/file/d/1XRy-ce6g4FfaZvD3S1oMVe8Ij9nn7eDV/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="btn btn-primary w-full"
                             >
                                 <Download size={20} />
-                                Download PDF
+                                View Resume
                             </a>
 
-                            <div className="admin-hint">
-                                <div className="hint-header">
-                                    <Info size={16} />
-                                    <span>How to update the resume?</span>
-                                </div>
-                                <p>
-                                    To update this resume, simply replace the <code>resume.pdf</code> file
-                                    in the <code>public</code> directory of this project before deploying.
-                                </p>
-                            </div>
+
                         </div>
                     </div>
                 </motion.div>

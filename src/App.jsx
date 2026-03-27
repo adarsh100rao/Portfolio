@@ -3,7 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
-import ResumeSection from './components/ResumeSection';
+import Projects from './components/Projects';
+import Achievements from './components/Achievements';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <Hero />
         <About />
         <Experience />
-        <ResumeSection />
+        <Projects />
+        <Achievements />
       </main>
       <Footer />
     </div>

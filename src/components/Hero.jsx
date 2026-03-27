@@ -1,14 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, Code2, Database, Layout, Terminal } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
     return (
         <section id="home" className="hero-section">
             {/* Background elements */}
-            <div className="glow glow-1"></div>
-            <div className="glow glow-2"></div>
+            <motion.div 
+                className="glow glow-1"
+                animate={{ scale: [1, 1.2, 1], opacity: [0.4, 0.6, 0.4] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <motion.div 
+                className="glow glow-2"
+                animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0.5, 0.3] }}
+                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            />
 
             <div className="container hero-container">
                 <div className="hero-content">
@@ -17,7 +25,7 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <span className="badge">Available for work</span>
+                        <span className="badge">Welcome to my portfolio !</span>
                     </motion.div>
 
                     <motion.h1
@@ -27,7 +35,7 @@ const Hero = () => {
                         className="hero-title"
                     >
                         Hi, I'm <br />
-                        <span className="gradient-text">Software Developer</span>
+                        <span className="gradient-text">Adarsh Rao</span>
                     </motion.h1>
 
                     <motion.p
@@ -36,8 +44,7 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="hero-subtitle"
                     >
-                        I build exceptional and accessible digital experiences for the web.
-                        Passionate about UI/UX, modern web technologies, and clean code.
+                        Software Development Engineer @ Amazon | B.Tech Mathematics & Computing, NIT Hamirpur '25
                     </motion.p>
 
                     <motion.div
@@ -46,7 +53,7 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="hero-actions"
                     >
-                        <a href="#resume" className="btn btn-primary">
+                        <a href="https://drive.google.com/file/d/1XRy-ce6g4FfaZvD3S1oMVe8Ij9nn7eDV/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                             <Download size={20} />
                             View Resume
                         </a>
@@ -56,6 +63,29 @@ const Hero = () => {
                         </a>
                     </motion.div>
                 </div>
+
+                {/* Right Side Visual */}
+                <motion.div 
+                    className="hero-visual"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                    <div className="visual-circle">
+                        <div className="floating-icon icon-1">
+                            <Code2 size={28} />
+                        </div>
+                        <div className="floating-icon icon-2">
+                            <Database size={28} />
+                        </div>
+                        <div className="floating-icon icon-3">
+                            <Layout size={28} />
+                        </div>
+                        <div className="floating-icon icon-4">
+                            <Terminal size={28} />
+                        </div>
+                    </div>
+                </motion.div>
             </div>
         </section>
     );

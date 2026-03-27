@@ -5,25 +5,25 @@ import './Experience.css';
 
 const experiences = [
     {
-        role: 'Senior Software Engineer',
-        company: 'Tech Solutions Inc.',
-        period: '2021 - Present',
-        description: 'Led the development of a high-traffic e-commerce platform. Architected the transition from a monolithic architecture to microservices using Node.js and Docker. Mentored junior developers and established CI/CD best practices.',
-        techStack: ['Node.js', 'React', 'Docker', 'AWS']
+        role: 'Software Development Engineer',
+        company: 'Amazon',
+        period: 'Dec 2025 - Present',
+        description: 'Orchestrated the cross-regional migration of Autopay’s AWS microservices from Dublin to India. Optimized distributed system performance with region-specific configurations, reducing end-to-end latency by 70% for Indian users. Ensured high availability and fault tolerance during large-scale data migrations.',
+        techStack: ['Java', 'AWS', 'Microservices', 'Distributed Systems']
     },
     {
-        role: 'Full Stack Developer',
-        company: 'Creative Agency',
-        period: '2019 - 2021',
-        description: 'Developed and maintained custom web applications for various clients. Improved website performance by 40% through code splitting and lazy loading. Collaborated closely with designers to implement pixel-perfect UIs.',
-        techStack: ['Vue.js', 'Express', 'MongoDB', 'Sass']
+        role: 'Software Engineering Intern',
+        company: 'Google',
+        period: 'Jan 2025 - Jul 2025',
+        description: 'Developed a workflow interface within Symphony, integrating Gemini AI to automate workflow generation and explanations, reducing new hire onboarding time by 60%. Designed and deployed a full-stack service from scratch in TypeScript, Python, and Java to integrate AI models, establishing a scalable foundation for future initiatives.',
+        techStack: ['TypeScript', 'Python', 'Java', 'Gemini AI']
     },
     {
-        role: 'Frontend Developer Intern',
-        company: 'Startup Hub',
-        period: '2018 - 2019',
-        description: 'Assisted in building responsive landing pages and interactive dashboards. Participated in daily stand-ups and code reviews. Gained hands-on experience with modern JavaScript frameworks.',
-        techStack: ['React', 'HTML/CSS', 'JavaScript']
+        role: 'ML Summer School Scholar',
+        company: 'Amazon',
+        period: 'Jun 2024 - Jul 2024',
+        description: 'Gained in-depth knowledge of advanced machine learning algorithms, model optimization, and industry applications. Developed hands-on experience by applying ML techniques to solve complex real-world problems.',
+        techStack: ['Machine Learning', 'Python', 'Data Science']
     }
 ];
 
