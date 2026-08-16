@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Endless Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1 class="game-title">Endless Runner</h1>
+        <p class="instructions">Press <strong>Spacebar</strong>, <strong>Up Arrow</strong>, or <strong>Tap</strong> to Jump</p>
+        
+        <div class="game-container" id="game-container">
+            <!-- Ground Element inside container to separate from character z-index -->
+            <div class="ground" id="ground"></div>
+
+            <div id="character" class="run">
+                <div class="head"></div>
+                <div class="body-torso"></div>
+                <div class="arm arm-left"></div>
+                <div class="arm arm-right"></div>
+                <div class="leg leg-left"></div>
+                <div class="leg leg-right"></div>
+            </div>
+            
+            <div id="obstacles-container"></div>
+            
+            <div id="score">Score: 0</div>
+            
+            <div id="game-over">
+                <h2>Game Over!</h2>
+                <p>Your Score: <span id="final-score">0</span></p>
+                <button onclick="restartGame()">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -53,7 +53,7 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="hero-actions"
                     >
-                        <a href="https://drive.google.com/file/d/1XRy-ce6g4FfaZvD3S1oMVe8Ij9nn7eDV/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                        <a href="https://drive.google.com/file/d/1jQz-3Gx-rz86w1U4ZjcVjNHnaX4GnWid/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                             <Download size={20} />
                             View Resume
                         </a>

@@ -36,7 +36,7 @@ const ResumeSection = () => {
 
                         <div className="resume-actions">
                             <a
-                                href="https://drive.google.com/file/d/1XRy-ce6g4FfaZvD3S1oMVe8Ij9nn7eDV/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1jQz-3Gx-rz86w1U4ZjcVjNHnaX4GnWid/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn btn-primary w-full"
